@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Media Page</title>
+</head>
+<body>
+
+  <h1>Welcome to My Media Page</h1>
+
+  <h2>Picture Element with Multiple Sources</h2>
+  <picture>
+    <source srcset="images/mobile.jpg" media="(max-width: 600px)">
+    <source srcset="images/tablet.jpg" media="(max-width: 1024px)">
+    <source srcset="images/laptop.jpg" media="(min-width: 1025px)">
+    <img src="images/default.jpg" alt="A representation of my journey">
+  </picture>
+
+  <h2>Audio Message</h2>
+  <audio controls>
+    <source src="audio/message.mp3" type="audio/mpeg">
+    <source src="audio/message.ogg" type="audio/ogg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <h2>Inspirational Video</h2>
+  <video controls width="600">
+    <source src="videos/inspiration.mp4" type="video/mp4">
+    <source src="videos/inspiration.webm" type="video/webm">
+    Your browser does not support the video tag.
+  </video>
+
+  <h2>Embedded YouTube Video</h2>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+          title="YouTube video player" frameborder="0" allowfullscreen>
+  </iframe>
+
+  <p><a href="index.html">Go Back to Home</a></p>
+
+</body>
+</html>
